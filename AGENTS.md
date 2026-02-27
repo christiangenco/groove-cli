@@ -5,20 +5,18 @@ Automated Groove helpdesk inbox triage using Claude.
 ## Usage
 
 ```bash
-cd ~/tools/groove-cli
-
 # List unread tickets (read-only)
-ruby main.rb list
-ruby main.rb list --limit 10
+groove-cli list
+groove-cli list --limit 10
 
 # Triage tickets with Claude AI (modifies ticket state)
-ruby main.rb triage
+groove-cli triage
 
 # Preview triage decisions without modifying anything
-ruby main.rb triage --dry-run
+groove-cli triage --dry-run
 
 # Help
-ruby main.rb --help
+groove-cli --help
 ```
 
 ## Commands
